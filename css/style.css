@@ -1,0 +1,50 @@
+/*
+* lackluster css sheet (made by me)
+*/
+
+/* body html stuff */
+html {
+  font-family: Georgia;
+  font-size: 100%;
+  text-align: center;
+}
+
+body {
+  margin-left: 30%;
+  margin-right: 30%;
+  overflow-y: scroll;
+  overflow-x: wrap;
+  background-color: rgb(194, 221, 229);
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding: 0.2rem;
+}
+
+h2 {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+p {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+footer {
+  position: fixed;
+  font-size: 0.9rem;
+
+  /* border deets */
+  border: 3px solid rgba(160, 200, 246, 69);
+  border-radius: 5px;
+
+  /* position of the footer/sidebar */
+  /* note this just centers the footer bar */
+  margin-left: 5%;
+  bottom: 2vmin;
+  width: 30%;
+}
+
+/* media */
