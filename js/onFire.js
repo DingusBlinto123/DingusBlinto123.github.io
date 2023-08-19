@@ -1,11 +1,17 @@
 const FIRE_AREA = document.getElementById("fireArea");
 // console.log(FIRE_AREA);
+
 //fire script
 for (let i = 0; i < 3; i++) {
-    setInterval(placeFire(),1000);
+    setInterval(placeFire, 1000);
+    console.log(i);
 }
 
-//
+/**
+* functions
+*/
+
+//places a fire emji at a random location on the screen
 function placeFire() {
   const FIRE = "0x1F525";
 
@@ -19,6 +25,7 @@ function placeFire() {
   fire.style.bottom = Math.round(Math.random() * window.innerHeight) + "px";
   fire.style.left = Math.round(Math.random() * window.innerWidth) + "px";
 
+    //add fire to body
   FIRE_AREA.appendChild(fire);
 }
 
