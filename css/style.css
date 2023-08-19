@@ -40,6 +40,11 @@ p {
   text-align: left;
   font-size: 1.2rem;
 }
+p.error {
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(99, 25, 25);
+}
 
 footer {
   font-size: 0.9rem;

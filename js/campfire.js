@@ -98,11 +98,13 @@ function setFire() {
 
   //idk i guess the area's on fire or something
   //change the bg to a light red
-  setTimeout(goToFire(), 2000);
+  goToFire();
   //marquee the fire emoji :/
 }
 
 //redirects to fire.html
 function goToFire() {
+  //i have no clue why it doesn't wait for the 2 seconds :/
+  setTimeout(2000);
   window.location.replace("fire.html");
 }
