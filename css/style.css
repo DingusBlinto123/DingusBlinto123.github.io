@@ -9,10 +9,18 @@ html {
   text-align: center;
 }
 
+/* body for when there's fire */
+body.fire {
+  background-color: rgb(247, 208, 198);
+  margin-left: 30%;
+  margin-right: 30%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
 body {
   margin-left: 30%;
   margin-right: 30%;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: wrap;
   background-color: rgb(194, 221, 229);
 }
@@ -23,6 +31,7 @@ h1 {
 }
 
 h2 {
+  font-weight: normal;
   text-align: left;
   font-size: 1.5rem;
 }
@@ -33,8 +42,10 @@ p {
 }
 
 footer {
-  position: fixed;
   font-size: 0.9rem;
+
+  /* anchors the thing to the bottom */
+  position: fixed;
 
   /* border deets */
   border: 3px solid rgba(160, 200, 246, 69);
@@ -47,4 +58,35 @@ footer {
   width: 30%;
 }
 
+/*similar to p but it's got an area it can't finish*/
+textBox {
+  /* box positioning */
+  position: absolute;
+  top: 45%;
+  right: 10%;
+
+  /* box size */
+  height: 20%;
+  width: 25%;
+  padding: 10px;
+
+  /* so there's not overflow */
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+textBox.p {
+  text-align: left;
+  font-size: 0.5rem;
+  text-overflow: wrap;
+}
+
 /* media */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+}
